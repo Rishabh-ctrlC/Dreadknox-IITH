@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreadknox | IITH Smart Campus</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <h1>Dreadknox</h1>
+            <p>IITH Pod-Mate Locator</p>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="search-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search by name, roll number, or pod...">
+                <button id="themeToggle" class="theme-btn">Toggle Dark Mode</button>
+            </div>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All Blocks</button>
+                <button class="filter-btn" data-filter="Lambda">Lambda</button>
+                <button class="filter-btn" data-filter="Epsilon">Epsilon</button>
+            </div>
+        </section>
+
+        <section class="directory-grid" id="directoryGrid">
+            <!-- Student cards inject here via JavaScript -->
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
